@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+  
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>First Website</title>
+	<link rel="icon" href ="images/lamb.jpg" type="image" sizes="16x16" >
+	
+	<style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 13px sans-serif;
+                width: 50%;  
+                margin-left: auto;
+                margin-right:auto;
+                color: #101080; 
+                                          
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+                height:20px;
+                }
+                
+            tr {
+                text-align:center;
+                padding: 5px;
+                }
+                              	
+    div1 { 
+	    text-align:center;
+	    }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        </style>
+  
+</head><body>
+
+	
+
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<center>
+<header>
+<h1>
+<div class="size1">
+<p style="color: red;" align="center"> NZ Tourism</p>
+</div>
+</h1>
+</header>
+</center>
+
+<ul>
+  
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page2.html">Page 2</a></li>
+  <li><a class="activeul" href="page3.html">Page3</a></li>
+  <li><a href="page4.html">Page4</a></li>
+  <li><a href="page5.html">Page5</a></li>
+  <li><a href="page6.html">Page6</a></li>
+  <li><a href="page7.html">Page7</a></li>
+</ul>
+	
+	<section> 
+	
+	<center>
+	<p>
+		
+		
+		This is a website about NZ Tourism
+		
+		
+		
+		
+		</p>
+		
+		
+		
+		
+	
+	</center>
+	
+		<p align="center"><button type="button" onclick="mytable()">List Of NZ's Most Popular Big Things</button></p>
+
+<script src="d3.v3.min.js"></script> 
+<div>
+<script type="text/javascript"charset="utf-8"> 
+function mytable() {
+            d3.text("data.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+                var container = d3.select("body")
+                    .append("table")
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                       .append("tr")
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+	}
+        </script>
+	
+		</div>
+	
+	
+	
+	</section>
+	
+	<center>
+	<img src="images/tongariro.jpg" alt="Sheep" width="500" />
+	</center>
+    
+	<footer>Hello</footer>
+
+
+</body></html>

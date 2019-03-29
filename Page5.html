@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+  
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>First Website</title>
+	<link rel="icon" href ="images/lamb.jpg" type="image" sizes="16x16" >
+
+  
+</head><body>
+<center>
+<header>
+<h1>
+<div class="size1">
+<p style="color: red;" align="center"> NZ Tourism</p>
+</div>
+</h1>
+</header>
+</center>
+
+<ul>
+  
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page2.html">Page2</a></li>
+  <li><a href="page3.html">Page3</a></li>
+  <li><a href="page4.html">Page4</a></li>
+  <li><a class="activeul" href="page5.html">Page 5</a></li>
+  <li><a href="page6.html">Page6</a></li>
+  <li><a href="page7.html">Page7</a></li>
+	
+</ul>
+
+	<section> 
+	
+	<center>
+	<p>This is a website about NZ Tourism</p>
+		
+		
+		
+	
+	</center>
+	
+	<content>
+	
+	
+	
+	</section>
+	
+	
+	</article>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+	
+</content>
+
+	
+<div class="slideshow-container">
+<center>
+<div class="mySlides fade">
+     <div class="numbertext">1 / 12</div>
+	 <img src="images/sheep.jpg" height="400px" width="700px">
+	 <div class="text">Be creative</div>
+</div>
+
+<div class="mySlides fade">
+     <div class="numbertext">2 / 12</div>
+	 <img src="images/sheeps.jpg" height="400px" width="700px">
+	 <div class="text">Have Fun</div>
+</div>
+
+
+<div class="mySlides fade">
+     <div class="numbertext">3 / 12</div>
+	 <img src="images/floof.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">4 / 12</div>
+	 <img src="images/sheepss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">5 / 12</div>
+	 <img src="images/sheepsss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">6 / 12</div>
+	 <img src="images/sheepssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">7 / 12</div>
+	 <img src="images/sheepsssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">8 / 12</div>
+	 <img src="images/sheepssssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">9 / 12</div>
+	 <img src="images/sheepsssssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!!!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">10 / 12</div>
+	 <img src="images/sheepssssssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!!!!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">11 / 12</div>
+	 <img src="images/sheepsssssssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!!!!!!</div>
+</div>
+<div class="mySlides fade">
+     <div class="numbertext">12 / 12</div>
+	 <img src="images/sheepssssssssss.jpg" height="400px" width="700px">
+	 <div class="text">Never be bored again!!!!!!!!!</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+     <span class="dot" onClick="currentSlide(1)"></span>
+	 <span class="dot" onClick="currentSlide(2)"></span>
+	 <span class="dot" onClick="currentSlide(3)"></span>
+	 <span class="dot" onClick="currentSlide(4)"></span>
+	 <span class="dot" onClick="currentSlide(5)"></span>
+	 <span class="dot" onClick="currentSlide(6)"></span>
+	 <span class="dot" onClick="currentSlide(7)"></span>
+	 <span class="dot" onClick="currentSlide(8)"></span>
+	 <span class="dot" onClick="currentSlide(9)"></span>
+	 <span class="dot" onClick="currentSlide(10)"></span>
+	 <span class="dot" onClick="currentSlide(11)"></span>
+	 <span class="dot" onClick="currentSlide(12)"></span>
+
+	</div>
+	 
+
+	 
+
+</div>
+</center>
+<div align="center">
+    <button class="button" onclick="plusSlides(-1)" >Previous</button>
+    <button class="button" onclick="plusSlides(1)" >Next</button>
+  </div>
+      
+	  
+<script>
+	
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timer = setTimeout(showSlides, 3000);
+} 
+</script>
+	
+	
+	
+<footer>
+	
+	Hello
+	
+</footer>
+
+</body></html>

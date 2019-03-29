@@ -1,0 +1,194 @@
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:grey;
+position: sticky;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: black;
+text-align: left;
+padding: 8px 20px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color:red;
+}
+
+.activeul{
+background-color:blue;
+}
+
+section {
+	
+	
+	border: 1px solid black;
+	margin-top: 40px;
+}
+footer
+{
+	width: 85%;
+	margin-left: 7.5%;
+	position: fixed;
+	
+	bottom: 0;
+	left: 0;
+	background-color: silver;
+    color: white;
+    text-align: center;
+	
+	
+}
+
+header
+{
+width: 90%;
+border: 3px solid black;
+height: 100px;
+
+	
+	
+	
+}
+
+body
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightgray;
+	
+	
+}
+
+content
+{
+	
+	width: 90%;
+	margin-left: 5%;
+	background-color: silver;
+	
+		
+	
+	
+		
+	
+	
+	
+}
+sub-content
+{
+	width: 80%;
+	margin-left: 10%;
+	
+	
+	
+	
+}
+
+img
+{
+	margin-top: 60px;
+	
+}
+.column {
+	float: left;
+	width: 33.33%;	
+}
+/* Clear floats after columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.column2 {
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+	
+	
+/*Slide Show container*/
+.slideshow-container {
+      max-width: 1000px ;
+	  position: relative;
+	  margin: auto;
+}
+
+.mySlides {
+      display: none;
+}
+
+.prev .next {
+      curser: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: #FFFFFF;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0m 3px 3px 0;
+}
+
+.next {
+      right: 0;
+	  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+      background-color: rgba (0,0,0,0.8);
+}
+
+.text {
+      color: #000000;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+}
+
+.numbertext {
+      color: #666666;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+}
+
+.dot {
+      cursor: pointer;
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+      background-color: #717171;
+}
+
+.fade {
+      -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+}
